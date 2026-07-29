@@ -1197,3 +1197,30 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 @media (prefers-reduced-motion: reduce) {
   .hero-scroll-line { animation: none; }
 }
+
+/* =============================================================
+   10. Fix móvil — banners con foto/placeholder (Plantilla y Cantera)
+   En pantallas estrechas el texto centrado (academy-banner-text) y el
+   aviso "Sustituye por una foto..." (img-placeholder.pin-right)
+   comparten el mismo ancho y se solapan/cortan. Les damos más alto
+   y separamos el aviso hacia arriba para que no choquen.
+   ============================================================= */
+@media (max-width: 719px) {
+  .academy-banner {
+    aspect-ratio: auto;
+    min-height: 380px;
+  }
+  .academy-banner img {
+    aspect-ratio: auto;
+    min-height: 380px;
+  }
+  .team-banner {
+    min-height: 380px;
+  }
+  .img-placeholder.pin-right {
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 1.25rem;
+  }
+}
