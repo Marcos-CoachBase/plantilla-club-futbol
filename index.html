@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlético Riomar · Club Deportivo</title>
+<meta name="description" content="Web oficial del Atlético Riomar: primer equipo, cantera, calendario, resultados y noticias del club.">
+<meta name="theme-color" content="#0B2340">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap">
+
+<link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<link rel="stylesheet" href="styles.css?v=20260727">
+</head>
+<body>
+
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+<!-- =============================================================
+     ESCUDO — símbolo SVG reutilizable. Para personalizarlo por
+     club: cambia las iniciales "AR", el año y los colores en
+     styles.css (--navy / --gold).
+     ============================================================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="crest-clip" clipPathUnits="userSpaceOnUse">
+      <path d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z"/>
+    </clipPath>
+    <symbol id="crest" viewBox="0 0 200 230">
+      <path d="M100,4 C100,4 20,26 20,26 L20,112 C20,170 54,206 100,226 C146,206 180,170 180,112 L180,26 C180,26 100,4 100,4 Z" fill="#0B2340" stroke="#C9A227" stroke-width="4"/>
+      <g clip-path="url(#crest-clip)">
+        <rect x="-20" y="96" width="240" height="150" fill="#123059"/>
+        <polygon points="-20,4 260,54 260,100 -20,50" fill="#C9A227"/>
+      </g>
+      <circle cx="100" cy="120" r="47" fill="#F6F7FA" stroke="#C9A227" stroke-width="3"/>
+      <text x="100" y="136" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="700" font-size="46" fill="#0B2340">AR</text>
+      <polygon points="100,180 103.2,188.2 112,188.4 105,193.6 107.6,202 100,197 92.4,202 95,193.6 88,188.4 96.8,188.2" fill="#E2BA3E"/>
+      <text x="100" y="217" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="600" font-size="14" letter-spacing="1" fill="#F6F7FA">1978</text>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- =============================================================
+     NAV
+     ============================================================= -->
+<header class="nav" data-nav>
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand">
+      <svg class="brand-crest" aria-hidden="true"><use href="#crest"></use></svg>
+      <span class="brand-text">
+        <span class="brand-name">Atlético Riomar</span>
+        <span class="brand-sub">Club Deportivo · 1978</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="nav-link" href="#club">Club</a>
+      <a class="nav-link" href="#plantilla">Plantilla</a>
+      <a class="nav-link" href="#noticias">Noticias</a>
+      <a class="nav-link" href="#calendario">Calendario</a>
+      <a class="nav-link" href="#cantera">Cantera</a>
+      <a class="nav-link" href="#patrocinadores">Patrocinadores</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contacto" class="btn btn-primary nav-cta">Hazte socio</a>
+      <button class="nav-burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" data-mobile-menu aria-label="Navegación móvil">
+  <a href="#club">Club</a>
+  <a href="#plantilla">Plantilla</a>
+  <a href="#noticias">Noticias</a>
+  <a href="#calendario">Calendario</a>
+  <a href="#cantera">Cantera</a>
+  <a href="#patrocinadores">Patrocinadores</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#contacto" class="btn btn-primary">Hazte socio</a>
+</nav>
+
+<main id="contenido">
+
+<!-- =============================================================
+     HERO
+     ============================================================= -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="assets/img/hero.jpg" alt="Campo de fútbol iluminado durante un entrenamiento al atardecer" fetchpriority="high" loading="eager" decoding="sync">
+  </div>
+
+  <div class="container hero-inner reveal">
+    <svg class="hero-crest" aria-hidden="true"><use href="#crest"></use></svg>
+    <p class="eyebrow">Club Deportivo · Fundado en 1978</p>
+    <h1 class="hero-title">Atlético<br><em>Riomar</em></h1>
+    <p class="hero-sub">Cantera, primer equipo y afición unidos por un mismo escudo. 48 años representando a nuestra ciudad, partido a partido.</p>
+    <div class="hero-actions">
+      <a href="#plantilla" class="btn btn-primary">Ver plantilla</a>
+      <a href="#contacto" class="btn btn-ghost">Hazte socio</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Descubre el club</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</section>
+
+<!-- Barra de estadísticas -->
+<section class="stat-bar">
+  <div class="container stat-grid">
+    <div class="stat reveal">
+      <div class="stat-num"><span class="count-up" data-count-to="1978">0</span></div>
+      <div class="stat-label">Año de fundación</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num"><span class="count-up" data-count-to="6">0</span></div>
+      <div class="stat-label">Títulos regionales</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num"><span class="count-up" data-count-to="8">0</span></div>
+      <div class="stat-label">Equipos federados</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num"><span class="count-up" data-count-to="480">0</span></div>
+      <div class="stat-label">Socios y socias</div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     CLUB / HISTORIA
+     ============================================================= -->
+<section class="section" id="club">
+  <div class="container club-grid">
+
+    <div class="club-media reveal">
+      <div class="img-placeholder" style="aspect-ratio:4/5;height:auto;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-5 5-3-3-5 5"/></svg>
+        <span>Sustituye por una foto del club</span>
+      </div>
+      <div class="club-media-badge">
+        <strong>48</strong>
+        <span>Temporadas<br>consecutivas</span>
+      </div>
+    </div>
+
+    <div class="club-text reveal">
+      <p class="eyebrow on-light">Nuestra historia</p>
+      <h2 class="section-title">Un club, un barrio, una afición</h2>
+      <p>El Atlético Riomar nació en 1978 de la mano de un grupo de vecinos que quería que el barrio tuviera un equipo propio. Desde entonces no hemos dejado de crecer: de un único equipo senior a una estructura completa que hoy forma a más de 300 niños y niñas cada temporada.</p>
+      <p>Seguimos siendo un club amateur con vocación de familia. Cada euro que entra vuelve al césped: material, formación de entrenadores y ayudas para que ningún niño se quede fuera por motivos económicos.</p>
+
+      <div class="club-values">
+        <div class="value-item">
+          <div class="value-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h3>Formación antes que resultado</h3>
+            <p>En cantera priorizamos que cada jugador crezca, compita y disfrute.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3>Compromiso con el barrio</h3>
+            <p>Convenios con colegios locales y cuotas reducidas para familias numerosas.</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8.7-7 10-3.5-1.3-7-5-7-10V6z"/></svg>
+          </div>
+          <div>
+            <h3>Juego limpio</h3>
+            <p>Respeto al rival, al árbitro y a la afición dentro y fuera del campo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1978</div>
+          <p>Fundación del club por un grupo de vecinos del barrio de Riomar.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1994</div>
+          <p>Primer ascenso a Primera Regional y estreno del Campo Municipal El Encinar.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2011</div>
+          <p>Apertura de la escuela de fútbol base con las seis categorías actuales.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <p>Renovación integral del campo y nueva grada cubierta para las familias.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================================
+     PRIMER EQUIPO / PLANTILLA
+     ============================================================= -->
+<section class="section section-alt" id="plantilla">
+  <div class="container">
+
+    <div class="team-banner reveal">
+      <div class="img-placeholder pin-right" style="position:absolute;inset:0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-5 5-3-3-5 5"/></svg>
+        <span>Sustituye por una foto de la plantilla</span>
+      </div>
+      <div class="team-banner-inner">
+        <div>
+          <p class="eyebrow">Primer equipo</p>
+          <h2>Plantilla 2026/27</h2>
+        </div>
+        <div class="team-banner-meta">
+          <div>
+            <strong>Liga Regional Aficionados</strong>
+            <span>Competición</span>
+          </div>
+          <div>
+            <strong>Manuel Rodríguez</strong>
+            <span>Primer entrenador</span>
+          </div>
+          <div>
+            <strong>16</strong>
+            <span>Jugadores inscritos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head">
+      <p class="eyebrow on-light">Plantilla</p>
+      <h2 class="section-title">Nuestros jugadores</h2>
+      <p class="section-lede">Dorsal, nombre y demarcación de la primera plantilla para la temporada 2026/27.</p>
+    </div>
+
+    <div class="squad-filters" role="group" aria-label="Filtrar por demarcación" data-squad-filters>
+      <button class="squad-filter is-active" data-filter="todos">Todos</button>
+      <button class="squad-filter" data-filter="portero">Porteros</button>
+      <button class="squad-filter" data-filter="defensa">Defensas</button>
+      <button class="squad-filter" data-filter="centrocampista">Centrocampistas</button>
+      <button class="squad-filter" data-filter="delantero">Delanteros</button>
+    </div>
+
+    <div class="squad-grid" data-squad-grid>
+      <article class="card player-card reveal" data-position="portero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">1</div></div><div class="player-name">Álvaro Muñoz</div><div class="card-position">Portero</div></article>
+      <article class="card player-card reveal" data-position="portero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">13</div></div><div class="player-name">Diego Salas</div><div class="card-position">Portero</div></article>
+      <article class="card player-card reveal" data-position="defensa"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">2</div></div><div class="player-name">Rubén Castro</div><div class="card-position">Defensa</div></article>
+      <article class="card player-card reveal" data-position="defensa"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">3</div></div><div class="player-name">Iker Domínguez</div><div class="card-position">Defensa</div></article>
+      <article class="card player-card reveal" data-position="defensa"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">4</div></div><div class="player-name">Pablo Vargas</div><div class="card-position">Defensa</div></article>
+      <article class="card player-card reveal" data-position="defensa"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">5</div></div><div class="player-name">Marcos Ibáñez</div><div class="card-position">Defensa</div></article>
+      <article class="card player-card reveal" data-position="defensa"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">15</div></div><div class="player-name">Nico Ferrer</div><div class="card-position">Defensa</div></article>
+      <article class="card player-card reveal" data-position="centrocampista"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">6</div></div><div class="player-name">Hugo Prieto</div><div class="card-position">Centrocampista</div></article>
+      <article class="card player-card reveal" data-position="centrocampista"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">8</div></div><div class="player-name">Adrián Cortés</div><div class="card-position">Centrocampista</div></article>
+      <article class="card player-card reveal" data-position="centrocampista"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">10</div></div><div class="player-name">Mario Esteban</div><div class="card-position">Centrocampista</div></article>
+      <article class="card player-card reveal" data-position="centrocampista"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">14</div></div><div class="player-name">Sergio Lozano</div><div class="card-position">Centrocampista</div></article>
+      <article class="card player-card reveal" data-position="centrocampista"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">20</div></div><div class="player-name">Bruno Aranda</div><div class="card-position">Centrocampista</div></article>
+      <article class="card player-card reveal" data-position="delantero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">7</div></div><div class="player-name">Álex Rey</div><div class="card-position">Delantero</div></article>
+      <article class="card player-card reveal" data-position="delantero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">9</div></div><div class="player-name">Iván Cabrera</div><div class="card-position">Delantero</div></article>
+      <article class="card player-card reveal" data-position="delantero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">11</div></div><div class="player-name">Diego Roldán</div><div class="card-position">Delantero</div></article>
+      <article class="card player-card reveal" data-position="delantero"><div class="player-photo"><img src="assets/img/avatar-jugador.svg" alt="Avatar genérico de jugador" loading="lazy"><div class="player-num">17</div></div><div class="player-name">Samuel Peña</div><div class="card-position">Delantero</div></article>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================================================
+     NOTICIAS
+     ============================================================= -->
+<section class="section" id="noticias">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow on-light">Actualidad</p>
+      <h2 class="section-title">Últimas noticias</h2>
+      <p class="section-lede">Todo lo que pasa dentro y fuera del campo, de primera mano.</p>
+    </div>
+
+    <div class="news-grid">
+      <article class="card news-card reveal">
+        <div class="news-media img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-5 5-3-3-5 5"/></svg>
+          <span>Sustituye esta imagen</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">18 jul 2026</div>
+          <h3 class="news-title">El primer equipo cierra la pretemporada con tres victorias seguidas</h3>
+          <p class="news-excerpt">El equipo de Manuel Rodríguez llega con buenas sensaciones al inicio de liga tras un mes de julio muy positivo.</p>
+          <a href="#" class="news-link">Leer más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card news-card reveal">
+        <div class="news-media">
+          <img src="assets/img/noticia-2.jpg" alt="Grada del campo municipal preparada para el inicio de temporada" loading="lazy" decoding="async">
+        </div>
+        <div class="news-body">
+          <div class="news-date">05 jul 2026</div>
+          <h3 class="news-title">La cantera estrena categoría y refuerza el cuerpo técnico</h3>
+          <p class="news-excerpt">El club amplía su escuela con un nuevo grupo Prebenjamín e incorpora dos entrenadores titulados.</p>
+          <a href="#" class="news-link">Leer más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card news-card reveal">
+        <div class="news-media img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10l-1 8a4 4 0 0 1-8 0L7 4z"/><path d="M5 4H3v2a4 4 0 0 0 4 4M19 4h2v2a4 4 0 0 1-4 4"/></svg>
+          <span>Sustituye esta imagen</span>
+        </div>
+        <div class="news-body">
+          <div class="news-date">22 jun 2026</div>
+          <h3 class="news-title">El club entrega sus reconocimientos de fin de temporada</h3>
+          <p class="news-excerpt">Un acto sencillo para agradecer a jugadores, familias y voluntariado su compromiso durante el curso.</p>
+          <a href="#" class="news-link">Leer más
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     CALENDARIO / RESULTADOS
+     ============================================================= -->
+<section class="section section-alt" id="calendario">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow on-light">Competición</p>
+      <h2 class="section-title">Calendario y resultados</h2>
+      <p class="section-lede">El próximo compromiso del primer equipo y el repaso a la pretemporada.</p>
+    </div>
+
+    <div class="match-grid">
+      <div class="next-match reveal">
+        <div class="next-match-comp">Liga Regional Aficionados · Jornada 1</div>
+        <div class="next-match-teams">
+          <div class="next-match-team">
+            <span class="crest-badge"><svg viewBox="0 0 200 230" aria-hidden="true"><use href="#crest"></use></svg></span>
+            <span>Atlético<br>Riomar</span>
+          </div>
+          <div class="next-match-vs">VS</div>
+          <div class="next-match-team">
+            <span class="crest-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <span>C.D. Vega<br>Alta</span>
+          </div>
+        </div>
+        <div class="next-match-info">
+          <div><span>Fecha</span><strong>Domingo 31 de agosto de 2026</strong></div>
+          <div><span>Hora</span><strong>18:00h</strong></div>
+          <div><span>Lugar</span><strong>Campo Municipal El Encinar</strong></div>
+          <div><span>Condición</span><strong>Local</strong></div>
+        </div>
+        <a href="#contacto" class="btn btn-primary">Cómo llegar</a>
+      </div>
+
+      <div class="reveal">
+        <p class="sponsor-tier-label">Resultados de pretemporada</p>
+        <div class="results-list">
+          <div class="card result-row">
+            <span class="result-tag win">V</span>
+            <div class="result-mid">
+              <div class="result-teams">Atlético Riomar vs Unión Portillo</div>
+              <div class="result-date">26 jul 2026 · Local</div>
+            </div>
+            <span class="result-score">2–1</span>
+          </div>
+          <div class="card result-row">
+            <span class="result-tag draw">E</span>
+            <div class="result-mid">
+              <div class="result-teams">Ribera CF vs Atlético Riomar</div>
+              <div class="result-date">19 jul 2026 · Visitante</div>
+            </div>
+            <span class="result-score">0–0</span>
+          </div>
+          <div class="card result-row">
+            <span class="result-tag loss">D</span>
+            <div class="result-mid">
+              <div class="result-teams">Atlético Riomar vs Recreativo Sauce</div>
+              <div class="result-date">12 jul 2026 · Local</div>
+            </div>
+            <span class="result-score">1–3</span>
+          </div>
+          <div class="card result-row">
+            <span class="result-tag win">V</span>
+            <div class="result-mid">
+              <div class="result-teams">Atlético Riomar vs CD Altamira</div>
+              <div class="result-date">05 jul 2026 · Local</div>
+            </div>
+            <span class="result-score">3–0</span>
+          </div>
+          <div class="card result-row">
+            <span class="result-tag win">V</span>
+            <div class="result-mid">
+              <div class="result-teams">Juventud Los Olmos vs Atlético Riomar</div>
+              <div class="result-date">28 jun 2026 · Visitante</div>
+            </div>
+            <span class="result-score">1–2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     CANTERA / ESCUELA
+     ============================================================= -->
+<section class="section" id="cantera">
+  <div class="container">
+
+    <div class="academy-banner reveal">
+      <div class="img-placeholder pin-right" style="position:absolute;inset:0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-5 5-3-3-5 5"/></svg>
+        <span>Sustituye por una foto de la cantera</span>
+      </div>
+      <div class="academy-banner-text">
+        <p class="eyebrow">Escuela de fútbol</p>
+        <h2>Cantera Atlético Riomar</h2>
+        <p>Seis categorías, un mismo objetivo: que cada niño y niña disfrute del fútbol mientras aprende a competir en equipo.</p>
+      </div>
+    </div>
+
+    <div class="section-head">
+      <p class="eyebrow on-light">Categorías</p>
+      <h2 class="section-title">De prebenjamín a juvenil</h2>
+      <p class="section-lede">Inscripciones abiertas todo el año. Entrenamos tres días por semana con entrenadores titulados.</p>
+    </div>
+
+    <div class="category-grid">
+      <div class="card category-card reveal"><span class="tag tag-gold">6–7 años</span><h3>Prebenjamín</h3><p>Primer contacto con el balón a través del juego.</p></div>
+      <div class="card category-card reveal"><span class="tag tag-gold">8–9 años</span><h3>Benjamín</h3><p>Fundamentos técnicos individuales y fútbol 7.</p></div>
+      <div class="card category-card reveal"><span class="tag tag-gold">10–11 años</span><h3>Alevín</h3><p>Iniciación táctica y primeros valores de equipo.</p></div>
+      <div class="card category-card reveal"><span class="tag tag-gold">12–13 años</span><h3>Infantil</h3><p>Fútbol 11 y primeras competiciones federadas.</p></div>
+      <div class="card category-card reveal"><span class="tag tag-gold">14–15 años</span><h3>Cadete</h3><p>Consolidación técnico-táctica y trabajo físico.</p></div>
+      <div class="card category-card reveal"><span class="tag tag-gold">16–18 años</span><h3>Juvenil</h3><p>Última etapa formativa antes del primer equipo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     PATROCINADORES
+     ============================================================= -->
+<section class="section section-alt" id="patrocinadores">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow on-light">Gracias por confiar en nosotros</p>
+      <h2 class="section-title">Patrocinadores y colaboradores</h2>
+      <p class="section-lede">El club existe gracias al apoyo de empresas y comercios de Riomar comprometidos con el deporte base.</p>
+    </div>
+
+    <div class="sponsor-grid-main reveal">
+      <p class="sponsor-tier-label">Patrocinador principal</p>
+      <div class="sponsor-main-tile img-placeholder light">
+        <span>Logotipo del patrocinador principal</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="sponsor-tier-label">Colaboradores</p>
+      <div class="sponsor-grid">
+        <div class="sponsor-tile has-logo">
+          <img src="assets/img/coachbase-logo.jpg" alt="CoachBase" loading="lazy" decoding="async">
+        </div>
+        <div class="sponsor-tile">Colaborador 2</div>
+        <div class="sponsor-tile">Colaborador 3</div>
+        <div class="sponsor-tile">Colaborador 4</div>
+        <div class="sponsor-tile">Colaborador 5</div>
+        <div class="sponsor-tile">Colaborador 6</div>
+        <div class="sponsor-tile">Colaborador 7</div>
+        <div class="sponsor-tile">Colaborador 8</div>
+      </div>
+    </div>
+
+    <div class="sponsor-cta reveal">
+      <div>
+        <h3>¿Quieres patrocinar al club?</h3>
+        <p>Tu marca en camisetas, vallas del campo y web oficial.</p>
+      </div>
+      <a href="#contacto" class="btn btn-dark">Quiero patrocinar</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================
+     CONTACTO
+     ============================================================= -->
+<section class="section" id="contacto">
+  <div class="container contact-grid">
+
+    <div class="reveal">
+      <p class="eyebrow on-light">Contacto</p>
+      <h2 class="section-title">Hablemos</h2>
+      <p class="section-lede">Para socios, patrocinadores o familias interesadas en la escuela: estamos a un mensaje de distancia.</p>
+
+      <div class="contact-info-list">
+        <div class="contact-info-item">
+          <div class="value-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Campo Municipal El Encinar</strong><span>Av. del Deporte 12, Riomar</span></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="value-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><strong>Teléfono</strong><a href="tel:+34611223344">611 22 33 44</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="value-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></div>
+          <div><strong>Email</strong><a href="mailto:info@atleticoriomar-ejemplo.com">info@atleticoriomar-ejemplo.com</a></div>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a class="social-btn" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a class="social-btn" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a class="social-btn" href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        <a class="social-btn" href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+
+    <div class="card contact-form-card reveal">
+      <!-- EDITAR: conecta este formulario a tu proveedor de email (Formspree, Netlify Forms, etc.) -->
+      <form data-contact-form novalidate>
+        <div class="field">
+          <label for="f-nombre">Nombre</label>
+          <input id="f-nombre" name="nombre" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-asunto">Asunto</label>
+          <input id="f-asunto" name="asunto" type="text" required>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-block">Enviar mensaje</button>
+        <p class="form-note">Te responderemos en menos de 48 horas.</p>
+        <p class="form-status" data-form-status role="status">¡Gracias! Hemos recibido tu mensaje y te contestaremos muy pronto.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="#inicio" class="brand">
+        <svg class="brand-crest" aria-hidden="true"><use href="#crest"></use></svg>
+        <span class="brand-text">
+          <span class="brand-name">Atlético Riomar</span>
+          <span class="brand-sub">Club Deportivo · 1978</span>
+        </span>
+      </a>
+      <p>Club de fútbol amateur de Riomar. Primer equipo, escuela de base y una afición que no falla.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Club</h4>
+      <ul>
+        <li><a href="#club">Historia</a></li>
+        <li><a href="#plantilla">Plantilla</a></li>
+        <li><a href="#cantera">Cantera</a></li>
+        <li><a href="#patrocinadores">Patrocinadores</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Actualidad</h4>
+      <ul>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#calendario">Resultados</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+34611223344">611 22 33 44</a></li>
+        <li><a href="mailto:info@atleticoriomar-ejemplo.com">info@atleticoriomar-ejemplo.com</a></li>
+        <li><a href="#contacto">Av. del Deporte 12, Riomar</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span data-year>2026</span> Atlético Riomar. Todos los derechos reservados.</p>
+    <div class="footer-bottom-right">
+      <a href="creditos.html">Créditos fotográficos →</a>
+      <span class="footer-dev">Desarrollado por <a href="https://coachbase.example.com" target="_blank" rel="noopener">CoachBase</a></span>
+    </div>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260727"></script>
+</body>
+</html>
