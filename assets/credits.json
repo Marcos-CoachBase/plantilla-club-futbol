@@ -20,5 +20,33 @@
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
     "foreign_landing_url": "https://www.flickr.com/photos/53662163@N06/12402061273",
     "source": "flickr"
+  },
+  "staff-manuel-rodriguez": {
+    "src": "https://images.pexels.com/photos/38675930/pexels-photo-38675930.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "license": "pexels",
+    "license_url": "https://www.pexels.com/license/",
+    "foreign_landing_url": "https://www.pexels.com/photo/38675930/",
+    "source": "pexels"
+  },
+  "staff-laura-tello": {
+    "src": "https://images.pexels.com/photos/4098274/pexels-photo-4098274.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "license": "pexels",
+    "license_url": "https://www.pexels.com/license/",
+    "foreign_landing_url": "https://www.pexels.com/photo/4098274/",
+    "source": "pexels"
+  },
+  "staff-javier-molina": {
+    "src": "https://images.pexels.com/photos/32695885/pexels-photo-32695885.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "license": "pexels",
+    "license_url": "https://www.pexels.com/license/",
+    "foreign_landing_url": "https://www.pexels.com/photo/32695885/",
+    "source": "pexels"
+  },
+  "staff-sonia-grande": {
+    "src": "https://images.pexels.com/photos/8424470/pexels-photo-8424470.jpeg?auto=compress&cs=tinysrgb&w=300",
+    "license": "pexels",
+    "license_url": "https://www.pexels.com/license/",
+    "foreign_landing_url": "https://www.pexels.com/photo/8424470/",
+    "source": "pexels"
   }
 }
